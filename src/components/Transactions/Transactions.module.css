@@ -1,0 +1,20 @@
+.transactionHistory {
+    margin:  0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 900px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #2a2a2a; 
+}
+th {
+    background-color: blueviolet;
+}
+tr:nth-child(odd) {
+    background-color: aqua;
+}
