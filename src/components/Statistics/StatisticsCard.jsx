@@ -2,10 +2,10 @@ import css from './Statistics.module.css';
 
 import PropTypes from 'prop-types';
 
-export const StatisticsCard = ({ props }) => {
+export const StatisticsCard = ({ text, props }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>Upload stats</h2>
+      {text && <h2 className={css.title}>{text}</h2>}
       <ul className={css.statList}>
         {props.map(({ id, label, percentage }) => {
           return (
@@ -21,7 +21,6 @@ export const StatisticsCard = ({ props }) => {
 };
 
 StatisticsCard.propTypes = {
-  text: PropTypes.string.isRequired,
   props: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
