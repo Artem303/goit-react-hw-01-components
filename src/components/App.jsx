@@ -35,7 +35,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       ></Profile>
-      <StatisticsCard text="Upload stats" props={data}></StatisticsCard>
+      <StatisticsCard props={data}></StatisticsCard>
       <Friends friendsList={friends} />
       <Transactions
         props={transactions}

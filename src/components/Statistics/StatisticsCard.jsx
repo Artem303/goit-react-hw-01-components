@@ -2,10 +2,10 @@ import css from './Statistics.module.css';
 
 import PropTypes from 'prop-types';
 
-export const StatisticsCard = ({ text, props }) => {
+export const StatisticsCard = ({ props }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{text}</h2>
+      <h2 className={css.title}>Upload stats</h2>
       <ul className={css.statList}>
         {props.map(({ id, label, percentage }) => {
           return (
